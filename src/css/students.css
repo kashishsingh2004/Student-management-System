@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.student-container{
+    padding: 100px 20px 20px; /* Adds space below fixed navbar */
+    background: linear-gradient(to bottom, #d7e1ec, #f1d0d0);
+    min-height:100vh;
+    
+}
+.h1{
+    font-size: 20px;
+    font:bold;
+}
+/* Button Styling */
+.add-btn{
+    display: inline-block;
+    background: white;
+    border: 2px solid black;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 10px 0;
+
+}
+
+/* Ensure heading or  students add btn alignment */
+.btn-container-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    /* position: fixed;
+    width: 80%;
+    height: 0vh;
+    z-index: 1000; */
+
+}
+table {
+    width: 80%; /* Set table width to 80% of the container */
+    margin: auto;
+    margin-top: 40px; /* margin from top to ensure table always align after btn-container-heading */
+    border-collapse: collapse; /* Ensures borders don't double */
+    background-color: white;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 10px;  /* raound table  edges */
+}
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;  /* create every tabale's header or table documents bottom line (border) */
+}
+
+/* Table header color and background color */
+th {
+    background-color: #616e6e;
+    color: white;
+}
+/* targetting tabale data cell anchor tag link  */
+td a {
+    color: blue;
+    text-decoration: none;  /* removing under line from anchor tag */
+    font-weight: bold;
+}
+td a:hover {
+ text-decoration: underline;
+}

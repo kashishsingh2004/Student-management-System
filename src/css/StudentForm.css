@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.student-form {
+  width: 100%;
+  margin: 20px auto;
+  padding: 100px 20px 20px;
+  /* Adds space below fixed navbar */
+  background: linear-gradient(to bottom, #d7e1ec, #f1d0d0);
+  min-height: 100vh;
+  font-family: "Tektur", sans-serif;
+}
+
+/* Container for form */
+.form-group-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 40px auto;
+  /* margin top and bottom 40px only */
+  flex-wrap: wrap;
+  /*Ensures that form elements adjust properly on smaller screens instead of overflowing. */
+}
+
+/* Form Groups */
+.form-group {
+  width: 100%;
+  /* Ensures the input fields stay responsive and do not shrink incorrectly. */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  align-items: flex-start;
+  /* ensures lable alignment start at left side  */
+  max-width: 350px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Input Fields */
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  outline: none;
+  border-radius: 4px;
+  background: transparent;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-end; /* Aligns buttons to the right */
+  gap: 20px; /* Space between buttons */
+  margin-top: 20px;
+  width: 100%;
+  padding-right: 20px; /* Adds spacing from the right edge */
+}
+
+/* Cancel Button */
+.cancel-button {
+  background: #666; /* Dark gray */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px; /* More rounded corners */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adds shadow effect */
+}
+.cancel-button:hover {
+  background: #444; /* Darker gray on hover */
+}
+
+/* Update Button */
+.update-button {
+  background: white;
+  color: black;
+  padding: 12px 24px;
+  border: 2px solid black;
+  border-radius: 30px; /* More rounded corners */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adds shadow effect */
+}
+.update-button:hover {
+  background-color: black;
+  color: white;
+}
