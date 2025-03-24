@@ -54,30 +54,39 @@
   border-radius: 4px;
   background: transparent;
 }
+
 .buttons {
   display: flex;
-  justify-content: flex-end; /* Aligns buttons to the right */
-  gap: 20px; /* Space between buttons */
+  justify-content: flex-end;
+  /* Aligns buttons to the right */
+  gap: 20px;
+  /* Space between buttons */
   margin-top: 20px;
   width: 100%;
-  padding-right: 20px; /* Adds spacing from the right edge */
+  padding-right: 20px;
+  /* Adds spacing from the right edge */
 }
 
 /* Cancel Button */
 .cancel-button {
-  background: #666; /* Dark gray */
+  background: #666;
+  /* Dark gray */
   color: white;
   padding: 12px 24px;
   border: none;
-  border-radius: 30px; /* More rounded corners */
+  border-radius: 30px;
+  /* More rounded corners */
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adds shadow effect */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  /* Adds shadow effect */
 }
+
 .cancel-button:hover {
-  background: #444; /* Darker gray on hover */
+  background: #444;
+  /* Darker gray on hover */
 }
 
 /* Update Button */
@@ -86,14 +95,33 @@
   color: black;
   padding: 12px 24px;
   border: 2px solid black;
-  border-radius: 30px; /* More rounded corners */
+  border-radius: 30px;
+  /* More rounded corners */
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adds shadow effect */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  /* Adds shadow effect */
 }
+
 .update-button:hover {
   background-color: black;
   color: white;
+}
+
+/* Mobile View ke liye */
+@media screen and (max-width: 768px) {
+  .form-group {
+    min-width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
 }

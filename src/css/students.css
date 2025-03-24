@@ -67,3 +67,11 @@ td a {
 td a:hover {
  text-decoration: underline;
 }
+/* Mobile View ke liye Table Scrollable */
+@media screen and (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
