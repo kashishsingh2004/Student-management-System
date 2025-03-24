@@ -67,11 +67,21 @@ td a {
 td a:hover {
  text-decoration: underline;
 }
-/* Mobile View ke liye Table Scrollable */
+/* ✅ Mobile View - Scrollable Table */
 @media screen and (max-width: 768px) {
     table {
         display: block;
         overflow-x: auto;
         white-space: nowrap;
+    }
+
+    .btn-container-heading {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .add-btn {
+        width: 100%;
+        text-align: center;
     }
 }

@@ -13,3 +13,13 @@
     font-family: "Tektur", sans-serif;
     padding: 100px 20px 20px;
 }
+/* ✅ Mobile Optimization */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        padding: 50px 10px;
+    }
+
+    .contact-container h1 {
+        font-size: 22px;
+    }
+}
