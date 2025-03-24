@@ -17,7 +17,7 @@ function Student() {
         <>
           <div className='btn-container-heading'>
             <h1> Student Details</h1>
-            <h3>Rai University</h3>
+            <h3>Kashish singh</h3>
             <button className='add-btn' onClick={() => dispatch(addStudent())}>
               Add New Student
             </button>
