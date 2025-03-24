@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: fixed; /* To fix position at the top of page */
+    top: 0;     
+    width: 100vw;     /* width of total page's width viewport */
+    height: 10vh;
+    background-color: #2c3e50; /* Dark Blue Background */
+    display: flex;
+    justify-content: space-evenly;   /* all the items align center horigontaly */
+    align-items: center;
+    color: white;
+   font-family: "Tektur", sans-serif;   /* From google font import font */
+   z-index: 1000;
+    
+}
+/* <-----link   */
+ .container a{
+    text-decoration: none;
+    color: white;
+
+
+}
